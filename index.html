@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:fragment="head">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeRecipes</title>
+
+  <link href="/styles/default.css" rel="stylesheet" />
+  <link href="/styles/top.css" rel="stylesheet" />
+  <link href="/styles/search.css" rel="stylesheet" />
+  <link href="/styles/recipes.css" rel="stylesheet" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/8d6aec8656.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <div class="top">
+      <h1>Coffee Recipes</h1>
+    </div>
+    <!-- radio button -->
+    <div class="search-container">  
+      <form id="input-coffee" name="coffee-btn">
+        <div class="radio-container hot-item">
+          <input id="hot" class="radio-button-coffee" type="radio" value="hot" name="coffee-btn" onchange="allHotRecipes();" />
+          <div class="radio-box">
+            <div class="icon hot-icon">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <label for="hot" class="radio-box-label">HOT</label>
+          </div>  
+        </div>
+        <div class="radio-container iced-item">
+          <input id="iced" class="radio-button-coffee" type="radio" value="iced" name="coffee-btn" onchange="allIcedRecipes();" />
+          <div class="radio-box">
+            <div class="icon iced-icon">
+              <i class="fa-solid fa-glass-water"></i>
+            </div>
+            <label for="iced" class="radio-box-label">ICED</label>
+          </div>  
+        </div>
+      </form>
+    </div>
+    
+    <!-- resipes -->
+    <div id="recipes" class="recipes">
+      <!-- <section class="recipe">
+        <h1 class="title"></h1>
+        <p class="description"></p>
+        <ol class="ingredients"></ol>
+        <img class="image" />
+      </section> -->
+    </div>
+    
+  </main>
+  
+  <script src="/recipedata.js"></script>
+
+</body>
+</html>
