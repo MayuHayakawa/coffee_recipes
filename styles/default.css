@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    background-image: url(https://images.unsplash.com/photo-1513530176992-0cf39c4cbed4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80);
+    background-size: auto;
+    background-color: rgba(233,231,228, 0.3);
+    background-blend-mode:lighten;
+    font-family: 'Nunito', sans-serif;
+    color: #B47A63;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width: 599px){
+
+}

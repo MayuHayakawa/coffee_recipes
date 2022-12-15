@@ -1,0 +1,13 @@
+.top {
+    background-image: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1661&q=80);
+    background-size: cover;
+    background-color: rgba(83,44,31, 0.3);
+    background-blend-mode:lighten;
+    color: #E9E7E4;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 599px){
+
+}
