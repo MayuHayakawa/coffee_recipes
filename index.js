@@ -77,9 +77,9 @@ function recipesReset() {
 
 // function scrollToRecipes() {
     
-//     var element = document.getElementById('recipes'); // 移動させたい位置の要素を取得
+//     var element = document.getElementById('recipes');
 //     var rect = element.getBoundingClientRect();
-//     var position = rect.top;    // 一番上からの位置を取得
+//     var position = rect.top;
 
 //     function scrollToTop() {
 //     scrollTo(0, position);
