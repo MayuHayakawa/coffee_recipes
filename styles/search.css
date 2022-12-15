@@ -18,6 +18,11 @@
   width: 7rem;
   margin: 2rem;
   border-radius: 10px;
+  opacity: 0.7;
+}
+
+.radio-container:hover {
+  opacity: 1;
 }
 
 .radio-button-coffee {
@@ -86,18 +91,7 @@
 @media screen and (max-width: 599px){
 
   .radio-container {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  .fa-mug-hot {
-    font-size: 2rem;
-    padding-left: 1.6rem;
-  }
-  
-  .fa-glass-water {
-    font-size: 2rem;
-    padding-left: 1.6rem;
+    opacity: 1;
   }
 
 }

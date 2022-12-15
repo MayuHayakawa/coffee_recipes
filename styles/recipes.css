@@ -4,18 +4,20 @@
 }
 
 .title {
-    height: 3rem;
+    height: auto;
     background-image: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1661&q=80);
     background-size: cover;
     background-color: rgba(83,44,31, 0.3);
     background-blend-mode:lighten;
     color: #E9E7E4;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0.5rem;
+    margin: 0;
 }
 
 .recipe-box {
+    margin: 1rem 0;
     display: flex;
     justify-content: space-evenly;
     border-radius: 5px;
@@ -31,12 +33,12 @@
 
 .description {
     margin: 0 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     max-width: 40%;
 }
 
 .description::first-letter {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .ingredients {
@@ -97,15 +99,21 @@
 
 @media screen and (max-width: 699px){
 
+    .recipe-box {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .image {
-        width: 10rem;
-        height: 10rem;
+        width: 7rem;
+        height: 7rem;
     }
 
     .ingredients {
+        margin-top: 1rem;
         padding: 1rem 1.5rem;
-        width: 10rem;
-        height: 10rem;
+        width: 95%;
+        height: auto;
     }
 
     .ingredients::before {
@@ -113,60 +121,32 @@
     }
 
     .ingredients li {
-        font-size: 0.8rem;
+        display: inline-block;
+        margin-right: 1.5rem;
     }
 
     .description {
         margin: 0 1rem;
-        font-size: 0.8rem;
-        max-width: 40%;
+        font-size: 1.3rem;
+        max-width: 70%;
     }
 
     .description::first-letter {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
 
 @media screen and (max-width: 599px){
 
-    .title {
-        margin: 0rem;
-        height: 2rem;
-        font-size: 1rem;
-    }
-
-    .image {
-        margin: 0.5rem;
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .ingredients {
-        margin: 0.5rem;
-        padding: 0.3rem 0.8rem;
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .ingredients::before {
-        font-size: 0.7rem;
-        margin-bottom: 0.1rem;
-    }
-
-    .ingredients li {
-        margin: 0.1rem 0;
-        font-size: 0.4rem;
+    .recipe-box {
+        flex-direction: column;
+        align-items: center;
     }
 
     .description {
-        margin: 0.5rem;
-        font-size: 0.5rem;
-        max-width: 60%;
-    }
-
-    .description::first-letter {
-        font-size: 0.8rem;
+        margin-top: 1rem;
+        max-width: 90%;
     }
 
 }

@@ -52,14 +52,16 @@ function recipesInput(rcp) {
     const drinkIngredients = document.querySelectorAll('.ingredients');
 
     for (let i=0; i < rcp.length; i++) {
-        drinkTitle[i].innerHTML = rcp[i].title;
-        drinkImage[i].src = rcp[i].image;
-        drinkImage[i].alt = rcp[i].title;
-        drinkDescription[i].innerHTML = rcp[i].description;
-        for(let j=0; j < rcp[i].ingredients.length; j++) {
-            let list = document.createElement('li');
-            list.innerHTML = rcp[i].ingredients[j];
-            drinkIngredients[i].appendChild(list);
+        if(drinkTitle[i] && drinkImage[i] && drinkDescription[i] && drinkIngredients[i]) {
+            drinkTitle[i].innerHTML = rcp[i].title;
+            drinkImage[i].src = rcp[i].image;
+            drinkImage[i].alt = rcp[i].title;
+            drinkDescription[i].innerHTML = rcp[i].description;
+            for(let j=0; j < rcp[i].ingredients.length; j++) {
+                let list = document.createElement('li');
+                list.innerHTML = rcp[i].ingredients[j];
+                drinkIngredients[i].appendChild(list);
+            }
         }
     }
 
