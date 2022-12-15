@@ -74,9 +74,23 @@ function recipesReset() {
     }
 }
 
+
+// function scrollToRecipes() {
+    
+//     var element = document.getElementById('recipes'); // 移動させたい位置の要素を取得
+//     var rect = element.getBoundingClientRect();
+//     var position = rect.top;    // 一番上からの位置を取得
+
+//     function scrollToTop() {
+//     scrollTo(0, position);
+//     }
+// }
+
+
 //set of functions for hot drink
 async function allHotRecipes() {
     recipesReset();
+    // scrollToRecipes();
     const hotRecipe = await getHotRecipes();
     recipesClone(hotRecipe);
     recipesInput(hotRecipe);
